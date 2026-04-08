@@ -134,7 +134,7 @@ check_docker() {
     if ! command -v docker &> /dev/null; then
         log ERROR "Docker 未安装，请先安装 Docker"
         log INFO "可以使用以下命令快速安装:"
-        log INFO "curl -fsSL https://get.docker.com | sudo sh"
+        log INFO "curl -fsSL https://raw.githubusercontent.com/RichardLiew/awesome-scripts/refs/heads/master/install-docker.sh | sudo sh -- -c"
         exit 1
     fi
     
