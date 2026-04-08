@@ -134,7 +134,7 @@ check_docker() {
     if ! command -v docker &> /dev/null; then
         log ERROR "Docker 未安装，请先安装 Docker"
         log INFO "可以使用以下命令快速安装:"
-        log INFO "curl -fsSL https://raw.githubusercontent.com/RichardLiew/awesome-scripts/refs/heads/master/install-docker.sh | sudo sh -- -c"
+        log INFO "curl -fsSL https://raw.githubusercontent.com/RichardLiew/awesome-scripts/refs/heads/master/install-docker.sh | sudo sh"
         exit 1
     fi
     
@@ -166,7 +166,9 @@ check_compose() {
     fi
     
     # 未安装，尝试自动安装
-    log ERROR "Docker Compose 未安装！"
+    log ERROR "Docker Compose 未安装，请先安装 Docker Compose"
+    log INFO "可以使用以下命令快速安装:"
+    log INFO "curl -fsSL https://raw.githubusercontent.com/RichardLiew/awesome-scripts/refs/heads/master/install-docker.sh | sudo sh -- -c"
     return 1
 }
 
