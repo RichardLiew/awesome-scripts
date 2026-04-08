@@ -8,7 +8,7 @@
 #   DESCRIPTION: 通用Docker安装脚本，支持Ubuntu/Debian/CentOS/RHEL/Fedora/
 #                Arch Linux/Alpine/SUSE/openSUSE等主流Linux发行版
 #
-#       OPTIONS: -h 显示帮助, -t 安装测试镜像, -c 安装Docker Compose
+#       OPTIONS: -h 显示帮助, -t 安装测试镜像, -m 使用镜像, -c 安装Docker Compose
 #  REQUIREMENTS: root权限或sudo权限
 #          BUGS: 报告到 https://github.com/yourrepo/issues
 #         NOTES: 建议在执行前备份重要数据
@@ -27,7 +27,7 @@ readonly BLUE='\033[0;34m'
 readonly NC='\033[0m' # No Color
 
 # 全局变量
-INSTALL_COMPOSE=true
+INSTALL_COMPOSE=false
 RUN_TEST=false
 DOCKER_VERSION=""
 LOG_FILE="/var/log/docker_install_$(date +%Y%m%d_%H%M%S).log"
