@@ -51,14 +51,14 @@ echo -e "${GREEN}=============================================${NC}"
 
 
 
-cat > /etc/docker/daemon.json <<EOF
-{
-  "registry-mirrors": [
-    "https://docker.mirrors.ustc.edu.cn",
-    "https://hub-mirror.c.163.com",
-    "https://mirror.baidubce.com"
-  ]
-}
+#cat > /etc/docker/daemon.json <<EOF
+#{
+#  "registry-mirrors": [
+#    "https://docker.mirrors.ustc.edu.cn",
+#    "https://hub-mirror.c.163.com",
+#    "https://mirror.baidubce.com"
+#  ]
+#}
 EOF
 
 systemctl daemon-reload
