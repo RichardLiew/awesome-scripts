@@ -1,9 +1,9 @@
 #!/bin/bash
 #===============================================================================
 #
-#          FILE: install_docker.sh
+#          FILE: install-docker.sh
 #
-#         USAGE: chmod +x install_docker.sh && sudo ./install_docker.sh
+#         USAGE: chmod +x install-docker.sh && sudo ./install-docker.sh
 #
 #   DESCRIPTION: 通用Docker安装脚本，支持Ubuntu/Debian/CentOS/RHEL/Fedora/
 #                Arch Linux/Alpine/SUSE/openSUSE等主流Linux发行版
