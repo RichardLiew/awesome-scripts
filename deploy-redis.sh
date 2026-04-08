@@ -251,7 +251,7 @@ maxmemory-samples 10
 
 # 日志配置
 loglevel notice
-logfile ""
+logfile /logs/redis.log
 
 # 客户端配置
 timeout 300
@@ -306,6 +306,7 @@ services:
     
     volumes:
       - ${WORKDIR}/data:/data
+      - ${WORKDIR}/logs:/logs
       - ${WORKDIR}/conf/redis.conf:/usr/local/etc/redis/redis.conf:ro
     
     command: redis-server /usr/local/etc/redis/redis.conf
